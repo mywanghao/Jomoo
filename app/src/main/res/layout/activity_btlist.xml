@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.ucas.jomoo.ui.BTListActivity">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/version_text"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bulb_version_selector"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/blist_auto"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/version_text"
+        android:background="@drawable/btlist_auto_selector"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/bt_lv"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/blist_auto"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<Button-->
+        <!--android:id="@+id/scan_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="Scan" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/stop_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toRightOf="@+id/scan_btn"-->
+        <!--android:text="Stop" />-->
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/bar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toRightOf="@id/stop_btn" />-->
+
+</RelativeLayout>

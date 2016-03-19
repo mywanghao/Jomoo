@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ucas.jomoo.view.NumRelative xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:gravity="top"
+    android:id="@+id/input_num_console"
+    android:layout_weight="1"
+    tools:showIn="@layout/activity_inputpassword">
+
+
+    <ImageButton
+        android:id="@+id/num1"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/num2"
+        android:layout_toLeftOf="@+id/num2"
+        android:layout_marginTop="100dp"
+        android:background="@mipmap/num1"
+        style="@style/num_style" />
+
+    <ImageButton
+        android:id="@+id/num2"
+        style="@style/num_style"
+        android:background="@mipmap/num2"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/num6" />
+
+    <ImageButton
+        android:id="@+id/num4"
+        style="@style/num_style"
+        android:layout_alignBottom="@+id/num5"
+        android:layout_toLeftOf="@+id/num5"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/num4" />
+
+    <ImageButton
+        android:id="@+id/num5"
+        style="@style/num_style"
+        android:layout_below="@+id/num2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/num5" />
+
+    <ImageButton
+        android:id="@+id/num3"
+        style="@style/num_style"
+        android:layout_alignBottom="@+id/num2"
+        android:layout_toRightOf="@+id/num2"
+        android:layout_marginLeft="20dp"
+        android:background="@mipmap/num3" />
+
+    <ImageButton
+        android:id="@+id/num7"
+        style="@style/num_style"
+        android:layout_alignBottom="@+id/num8"
+        android:layout_toLeftOf="@+id/num8"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/num7" />
+
+    <ImageButton
+        android:id="@+id/num6"
+        style="@style/num_style"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/num5"
+        android:layout_toRightOf="@+id/num5"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/num6" />
+
+    <ImageButton
+        android:id="@+id/num9"
+        style="@style/num_style"
+        android:layout_toRightOf="@+id/num8"
+        android:layout_alignBottom="@+id/num8"
+        android:layout_marginLeft="20dp"
+        android:background="@mipmap/num9" />
+
+    <ImageButton
+        android:id="@+id/num8"
+        android:clickable="false"
+        style="@style/num_style"
+        android:layout_below="@+id/num6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/num8" />
+
+    <ImageButton
+        android:id="@+id/num0"
+        android:clickable="false"
+        style="@style/num_style"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/num8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/num0" />
+
+    <ImageButton
+        android:id="@+id/num_pan"
+        android:clickable="false"
+
+        android:layout_toLeftOf="@+id/num8"
+        style="@style/num_style"
+        android:layout_below="@+id/num7"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/num_pan" />
+
+
+    <ImageButton
+        android:id="@+id/num_edit"
+        style="@style/num_style"
+        android:layout_below="@+id/num9"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/num0"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/num_exit" />
+
+
+</com.ucas.jomoo.view.NumRelative>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+
+<ImageView
+    android:layout_width="60dp"
+    android:id="@+id/nav_close"
+    android:src="@mipmap/back1"
+    android:layout_gravity="left|center"
+    android:layout_height="80dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_setter"
+            android:src="@mipmap/btn_setter_2"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_help"
+            android:src="@mipmap/btn_help_2"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

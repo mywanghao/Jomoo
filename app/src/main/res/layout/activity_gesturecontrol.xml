@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+
+    <include layout="@layout/layout_topconsole"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@mipmap/gaster_text"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/titlebar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp">
+
+        <ImageButton
+            android:id="@+id/left_exit_btn"
+            android:layout_width="72.6dp"
+            android:layout_height="40dp"
+            android:background="@drawable/exit_dark"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/moudle_iv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignLeft="@+id/bar_iv"
+        android:layout_alignTop="@+id/titlebar_rl"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/moudle_bg" />
+
+    <View
+        android:id="@+id/black_view"
+        android:layout_width="230dp"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/moudle_iv"
+        android:layout_marginBottom="46dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"/>
+
+
+    <ImageView
+        android:id="@+id/bar_iv"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/moudle_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/bar_bg" />
+
+
+
+    <ImageButton
+        android:id="@+id/clean_left_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/fan_left_btn"
+        android:layout_alignTop="@+id/fan_left_btn"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/clean_gc_bg_selector" />
+
+    <ImageButton
+        android:id="@+id/bulb_center_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/clean_left_btn"
+        android:layout_alignTop="@+id/clean_left_btn"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/bulb_gc_bg_selector" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/black_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/power_btn"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/power_bg_selector"
+            android:layout_below="@+id/black_view"
+            android:clickable="false"
+             />
+
+        <ImageButton
+            android:id="@+id/voice_btn"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/voice_bg_selector"
+            android:layout_below="@+id/black_view"
+            android:clickable="false"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/point_position"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/black_view"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/fan_right_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/clean_right_btn"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/clean_right_btn"
+        android:background="@drawable/fan_gc_bg_selector" />
+
+    <ImageButton
+        android:id="@+id/clean_right_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/bulb_center_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/point_position"
+        android:background="@drawable/clean_gc_bg_selector" />
+
+    <ImageButton
+        android:id="@+id/fan_left_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/moudle_iv"
+        android:layout_below="@+id/titlebar_rl"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/fan_gc_bg_selector" />
+
+    <!--<Button-->
+        <!--android:id="@+id/connect_btn"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:background="@drawable/connect"-->
+        <!--android:layout_alignBottom="@+id/power_btn"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="20dp" />-->
+
+</RelativeLayout>

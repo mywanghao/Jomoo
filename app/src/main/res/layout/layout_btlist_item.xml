@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/btlist_item_bg"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:id="@+id/devices_name"
+            android:text="XXXX设备"
+            android:layout_gravity="left|center"
+            android:textColor="#ffffff"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/connect_state"
+            android:text=""
+            android:textColor="#ffffff"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="right|center"
+            android:id="@+id/devices_btn"
+            android:background="@drawable/btlist_btn_selector"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        android:id="@+id/password_edit"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/input_password"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/password"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/un_password"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/unpassword"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</LinearLayout>
